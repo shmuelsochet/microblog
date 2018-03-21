@@ -3,8 +3,8 @@ from app import app
 from app.forms import LoginForm
 
 
-@app.route(url_for('/'))
-@app.route(url_for('/index'))
+@app.route('/')
+@app.route('/index')
 def index():
     user = {
         'username': 'Shmuel'
@@ -22,7 +22,7 @@ def index():
     return render_template('index.html', user=user, posts=posts)
 
 
-@app.route(url_for('/login'), methods=['GET', 'POST'])
+@app.route('/login', methods=['GET', 'POST'])
 def login():
     form = LoginForm()
     if form.validate_on_submit():
