@@ -4,6 +4,9 @@ from app.forms import LoginForm
 from flask_login import current_user, login_user, logout_user, login_required
 from app.models import User
 from werkzeug.urls import url_parse
+from app import login
+
+login.login_view = 'login'
 
 
 @app.route('/')
