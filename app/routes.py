@@ -1,7 +1,9 @@
 from flask import render_template, flash, redirect, url_for, request
 from app import app
-from app.forms import LoginForm
-from flask_login import current_user, login_user, logout_user, login_required
+from app.forms import LoginForm, RegistrationForm
+from flask_login import (
+    current_user, login_user, logout_user, login_required
+)
 from app.models import User
 from werkzeug.urls import url_parse
 from app import login
@@ -13,12 +15,9 @@ login.login_view = 'login'
 @app.route('/index')
 @login_required
 def index():
-    user = {
-        'username': 'Shmuel'
-    }
     posts = [
         {
-            'author': user,
+            'author': {'username': 'Shmuel'},
             'body': 'Beautiful day in Portland!'
         },
         {
@@ -26,7 +25,7 @@ def index():
             'body': 'The Avengers movie was so cool'
         }
     ]
-    return render_template('index.html', user=user, posts=posts)
+    return render_template('index.html', title='Home Page', posts=posts)
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -56,3 +55,11 @@ def login():
 def logout():
     logout_user()
     return redirect(url_for('index'))
+
+
+@app.route('/register', methods=['GET', 'POST'])
+def register():
+
+    form = RegistrationForm()
+
+    return render_template('register.html', title='Register', form=form)
