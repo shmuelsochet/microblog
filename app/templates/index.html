@@ -3,20 +3,21 @@
 {% block content %}
     <body>
         <h1>Hi, {{ current_user.username.upper() }}!</h1>
-        <form action="" method="post">
-            {{ form.hidden_tag() }}
-            <p>
-                {{ form.post.label }}<br>
-                {{ form.post(cols=32, rows=4) }}<br>
-                {% for error in form.post.errors %}
-                    <span style="color: red;">[{{ error }}]</span>
-                {% endfor %}
-            </p>
-            <p>{{ form.submit() }}</p>
-        </form>
+        {% if form %}
+            <form action="" method="post">
+                {{ form.hidden_tag() }}
+                <p>
+                    {{ form.post.label }}<br>
+                    {{ form.post(cols=32, rows=4) }}<br>
+                    {% for error in form.post.errors %}
+                        <span style="color: red;">[{{ error }}]</span>
+                    {% endfor %}
+                </p>
+                <p>{{ form.submit() }}</p>
+            </form>
+        {% endif %}
         {% for post in posts %}
-            <div><p> {{ post.author.username }} says: <b> {{ post.body }}
-            </b> <br>Time: {{ post.timestamp }}</p></div>
+            {% include '_post.html' %}
         {% endfor %}
     </body>
 {% endblock %}
