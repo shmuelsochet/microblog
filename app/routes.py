@@ -173,7 +173,7 @@ def unfollow(username):
     return redirect(url_for('user', username=username))
 
 
-@app.route('/reset_password_request')
+@app.route('/reset_password_request', methods=['GET', 'POST'])
 def reset_password_request():
     if current_user.is_authenticated:
         return redirect(url_for('index'))
