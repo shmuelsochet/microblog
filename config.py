@@ -15,7 +15,7 @@ class Config(object):
     MAIL_USE_TLS = os.getenv('MAIL_USE_TLS')
     MAIL_USERNAME = os.getenv('MAIL_USERNAME')
     MAIL_PASSWORD = os.getenv('MAIL_PASSWORD')
-    POSTS_PER_PAGE = os.getenv('POSTS_PER_PAGE')
+    POSTS_PER_PAGE = os.getenv('POSTS_PER_PAGE') or 3
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     ADMINS = ['sysochetdev@gmail.com']
 
