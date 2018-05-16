@@ -12,7 +12,7 @@
         </div>
     </div>
 
-    <p>No Account? <a href="{{ url_for('register') }}">Create one!</a></p>
-    <p>Forgot your password? <a href="{{ url_for('reset_password_request') }}">Click to Reset It</a></p>
+    <p>{{ _('No Account? ') }}<a href="{{ url_for('register') }}">{{ _('Create one!') }}</a></p>
+    <p>{{ _('Forgot your password? ') }}<a href="{{ url_for('reset_password_request') }}">{{ _('Click to Reset It') }}</a></p>
 
 {% endblock %}

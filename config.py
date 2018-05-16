@@ -18,4 +18,5 @@ class Config(object):
     POSTS_PER_PAGE = os.getenv('POSTS_PER_PAGE') or 3
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     ADMINS = ['sysochetdev@gmail.com']
+    LANGUAGES = ['en', 'es', 'iw']
 
