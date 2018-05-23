@@ -59,6 +59,7 @@ if not app.debug:
 
 @babel.localeselector
 def get_local():
+    # return 'es'
     return request.accept_languages.best_match(app.config['LANGUAGES'])
 
 

@@ -1,17 +1,17 @@
-# Hebrew translations for PROJECT.
-# Copyright (C) 2018 ORGANIZATION
+# Spanish translations for PROJECT.
+# Copyright (C) 2017 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2018-05-23 16:10-0400\n"
-"PO-Revision-Date: 2018-05-16 20:57-0400\n"
+"PO-Revision-Date: 2017-09-29 23:25-0700\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: he\n"
-"Language-Team: he <LL@li.org>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -20,84 +20,84 @@ msgstr ""
 
 #: app/__init__.py:22
 msgid "Please login to access this page."
-msgstr "נא התחבר בכדי לעבור לדף זה."
+msgstr ""
 
 #: app/forms.py:13 app/forms.py:33 app/forms.py:40
 msgid "Username"
-msgstr "שם משתמש"
+msgstr "Nombre de usuario"
 
 #: app/forms.py:14 app/forms.py:62
 msgid "Email"
-msgstr "אימייל"
+msgstr "Email"
 
 #: app/forms.py:15 app/forms.py:34 app/forms.py:67
 msgid "Password"
-msgstr "סיסמה"
+msgstr "Contraseña"
 
 #: app/forms.py:17 app/forms.py:69
 msgid "Confirm Password"
-msgstr "אמת סיסמה"
+msgstr ""
 
 #: app/forms.py:18 app/templates/register.html:5
 msgid "Register"
-msgstr "הרשמה"
+msgstr "Registrarse"
 
 #: app/forms.py:23
 msgid "Username is already taken, choose another"
-msgstr "שם משתמש כבר תפוס, בחר באפשרות אחרת"
+msgstr ""
 
 #: app/forms.py:29
 msgid "Please use a different email address"
-msgstr "אנא השתמש בכתובת דוא ל אחרת"
+msgstr ""
 
 #: app/forms.py:35
 msgid "Remember Me"
-msgstr "זכור אותי"
+msgstr "Recordarme"
 
 #: app/forms.py:36
 msgid "Sign In"
-msgstr "התחבר"
+msgstr "Ingresar"
 
 #: app/forms.py:41
 msgid "About me"
-msgstr "כמה מילים עלי"
+msgstr "Acerca de mí"
 
 #: app/forms.py:42 app/forms.py:58
 msgid "Submit"
-msgstr "שלח"
+msgstr "Enviar"
 
 #: app/forms.py:52
 msgid "Please use a different username."
-msgstr "נא השתמש בשם משתמש אחר."
+msgstr "Por favor use un nombre de usuario diferente."
 
 #: app/forms.py:57
 msgid "Say something"
-msgstr "תגיד משהו"
+msgstr "Dí algo"
 
 #: app/forms.py:63 app/forms.py:70
 msgid "Request Password Reset"
-msgstr "בקשת איפוס סיסמה"
+msgstr "Pedir una nueva contraseña"
 
 #: app/routes.py:37
 msgid "Your post is now live!"
-msgstr "ההודעה שלך היא עכשיו חי!"
+msgstr "¡Tu artículo ha sido publicado!"
 
 #: app/routes.py:78
 msgid "Invalid username or password"
-msgstr "שם משתמש או סיסמה לא חוקים"
+msgstr "Nombre de usuario o contraseña inválidos"
 
 #: app/routes.py:106
 msgid "Congratulations, you are now a registered user"
-msgstr "מזל טוב, אתה כעת משתמש רשום"
+msgstr ""
 
 #: app/routes.py:135
 msgid "Your changes have been saved."
-msgstr "השינויים שלך נשמרו."
+msgstr "Tus cambios han sido salvados."
 
 #: app/routes.py:150 app/routes.py:166
 #, python-format
 msgid "User %(username)s not found."
-msgstr ""
+msgstr "El usuario %(username)s no ha sido encontrado."
 
 #: app/routes.py:153
 msgid "You cannot follow yourself"
@@ -115,31 +115,31 @@ msgstr ""
 #: app/routes.py:173
 #, python-format
 msgid "You are not following %(username)s."
-msgstr ""
+msgstr "No estás siguiendo a %(username)s."
 
 #: app/routes.py:186
 msgid "Check your email for the instructions to reset your password"
-msgstr "בדוק את הדואר האלקטרוני שלך לקבלת ההוראות לאיפוס הסיסמה"
+msgstr "Busca en tu email las instrucciones para crear una nueva contraseña"
 
 #: app/routes.py:204
 msgid "Your password has been reset"
-msgstr "הסיסמה שלך אופסה"
+msgstr ""
 
 #: app/templates/404.html:4
 msgid "File Not Found"
-msgstr "הקובץ לא נמצא"
+msgstr ""
 
 #: app/templates/404.html:5 app/templates/500.html:6
 msgid "Back"
-msgstr "חזור"
+msgstr "Atrás"
 
 #: app/templates/500.html:4
 msgid "An unexpected error has occurred"
-msgstr "התרחשה שגיאה בחיבורName"
+msgstr "Ha ocurrido un error inesperado"
 
 #: app/templates/500.html:5
 msgid "The administrator has been notified. Sorry for the inconvenience!"
-msgstr "התקבל דיווח על מנהל המערכת. מצטער על אי הנוחות!"
+msgstr "El administrador ha sido notificado. ¡Lamentamos la inconveniencia!"
 
 #: app/templates/_post.html:10
 #, python-format
@@ -148,72 +148,72 @@ msgstr ""
 
 #: app/templates/base.html:18
 msgid "Toggle Navigation"
-msgstr "החלפת מצב ניווט"
+msgstr ""
 
 #: app/templates/base.html:23
 msgid "MicroBlog"
-msgstr "MicroBlog"
+msgstr ""
 
 #: app/templates/base.html:27
 msgid "Home"
-msgstr "דף הבית"
+msgstr "Inicio"
 
 #: app/templates/base.html:28
 msgid "Explore"
-msgstr "חקור"
+msgstr "Explorar"
 
 #: app/templates/base.html:32
 msgid "Login"
-msgstr "אנא התחבר לעמוד זה"
+msgstr "Ingresar"
 
 #: app/templates/base.html:34
 msgid "Profile"
-msgstr "פרופיל"
+msgstr "Perfil"
 
 #: app/templates/base.html:35
 msgid "Logout"
-msgstr "התנתק"
+msgstr "Salir"
 
 #: app/templates/edit_profile.html:5
 msgid "Edit Profile"
-msgstr "עריכת פרופיל"
+msgstr "Editar Perfil"
 
 #: app/templates/index.html:6
 #, python-format
 msgid "Hi, %(username)s !"
-msgstr "%(username)s משתמש"
+msgstr ""
 
 #: app/templates/index.html:22 app/templates/user.html:39
 msgid " Newer Posts"
-msgstr "חדש יותר"
+msgstr ""
 
 #: app/templates/index.html:27 app/templates/user.html:44
 msgid "Older Posts "
-msgstr "ישן יותר"
+msgstr ""
 
 #: app/templates/login.html:15
 msgid "No Account? "
-msgstr " אין לך חשבון?"
+msgstr ""
 
 #: app/templates/login.html:15
 msgid "Create one!"
-msgstr "צור אחד! "
+msgstr ""
 
 #: app/templates/login.html:16
 msgid "Forgot your password? "
-msgstr " הסיסמה שלך אופסה? "
+msgstr ""
 
 #: app/templates/login.html:16
 msgid "Click to Reset It"
-msgstr "בקשת איפוס סיסמה"
+msgstr "Haz click aquí para pedir una nueva"
 
 #: app/templates/reset_password.html:6
 msgid "Reset Your Password"
-msgstr "בדוק את הדואר האלקטרוני שלך לקבלת ההוראות לאיפוס הסיסמה"
+msgstr "Nueva Contraseña"
 
 #: app/templates/reset_password_request.html:6
 msgid "Reset Password"
-msgstr "בדוק את הדואר האלקטרוני שלך לקבלת ההוראות לאיפוס הסיסמה"
+msgstr "Nueva Contraseña"
 
 #: app/templates/user.html:7
 #, python-format
@@ -243,4 +243,91 @@ msgstr ""
 #: app/templates/user.html:24
 msgid "Unfollow"
 msgstr ""
+
+#~ msgid "Please log in to access this page."
+#~ msgstr "Por favor ingrese para acceder a esta página."
+
+#~ msgid "[Microblog] Reset Your Password"
+#~ msgstr "[Microblog] Nueva Contraseña"
+
+#~ msgid "Repeat Password"
+#~ msgstr "Repetir Contraseña"
+
+#~ msgid "Please use a different email address."
+#~ msgstr "Por favor use una dirección de email diferente."
+
+#~ msgid "Search"
+#~ msgstr "Buscar"
+
+#~ msgid "Congratulations, you are now a registered user!"
+#~ msgstr "¡Felicitaciones, ya eres un usuario registrado!"
+
+#~ msgid "Your password has been reset."
+#~ msgstr "Tu contraseña ha sido cambiada."
+
+#~ msgid "You cannot follow yourself!"
+#~ msgstr "¡No te puedes seguir a tí mismo!"
+
+#~ msgid "You are following %(username)s!"
+#~ msgstr "¡Ahora estás siguiendo a %(username)s!"
+
+#~ msgid "You cannot unfollow yourself!"
+#~ msgstr "¡No te puedes dejar de seguir a tí mismo!"
+
+#~ msgid "Not Found"
+#~ msgstr "Página No Encontrada"
+
+#~ msgid "%(username)s said %(when)s"
+#~ msgstr "%(username)s dijo %(when)s"
+
+#~ msgid "Welcome to Microblog"
+#~ msgstr "Bienvenido a Microblog"
+
+#~ msgid "Hi, %(username)s!"
+#~ msgstr "¡Hola, %(username)s!"
+
+#~ msgid "Newer posts"
+#~ msgstr "Artículos siguientes"
+
+#~ msgid "Older posts"
+#~ msgstr "Artículos previos"
+
+#~ msgid "New User?"
+#~ msgstr "¿Usuario Nuevo?"
+
+#~ msgid "Click to Register!"
+#~ msgstr "¡Haz click aquí para registrarte!"
+
+#~ msgid "Forgot Your Password?"
+#~ msgstr "¿Te olvidaste tu contraseña?"
+
+#~ msgid "Search Results"
+#~ msgstr "Resultados de Búsqueda"
+
+#~ msgid "Previous results"
+#~ msgstr "Resultados previos"
+
+#~ msgid "Next results"
+#~ msgstr "Resultados próximos"
+
+#~ msgid "User"
+#~ msgstr "Usuario"
+
+#~ msgid "Last seen on"
+#~ msgstr "Última visita"
+
+#~ msgid "%(count)d followers"
+#~ msgstr "%(count)d seguidores"
+
+#~ msgid "%(count)d following"
+#~ msgstr "siguiendo a %(count)d"
+
+#~ msgid "Edit your profile"
+#~ msgstr "Editar tu perfil"
+
+#~ msgid "Follow"
+#~ msgstr "Seguir"
+
+#~ msgid "Unfollow"
+#~ msgstr "Dejar de seguir"
 
