@@ -19,4 +19,5 @@ class Config(object):
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     ADMINS = ['sysochetdev@gmail.com']
     LANGUAGES = ['en', 'es', 'he']
+    MS_TRANSLATOR_KEY = os.getenv('MS_TRANSLATOR_KEY')
 
