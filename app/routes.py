@@ -1,8 +1,8 @@
 from datetime import datetime
-
 from guess_language import guess_language
 from werkzeug.urls import url_parse
-from flask import render_template, flash, redirect, url_for, request, g
+from flask import (render_template, flash, redirect, url_for, request, g,
+                   jsonify)
 from flask_login import (
     current_user, login_user, logout_user, login_required
 )
@@ -15,7 +15,7 @@ from app.forms import (
 from app.models import User, Post
 from app import login
 from app.email import send_password_reset_email
-
+from app.translate import translate
 
 login.login_view = 'login'
 
@@ -210,5 +210,13 @@ def reset_password(token):
         flash(_('Your password has been reset'))
         return redirect(url_for('login'))
     return render_template('reset_password.html', form=form)
+
+
+@app.route('/translate', methods=['POST'])
+@login_required
+def translate_text():
+    return jsonify({'text': translate(request.form['text'],
+                                      request.form['source_text'],
+                                      request.form['dest_language'])})
 
 
