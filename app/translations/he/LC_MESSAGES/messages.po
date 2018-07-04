@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-05-23 16:10-0400\n"
+"POT-Creation-Date: 2018-07-02 19:50-0400\n"
 "PO-Revision-Date: 2018-05-16 20:57-0400\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: he\n"
@@ -78,52 +78,60 @@ msgstr "תגיד משהו"
 msgid "Request Password Reset"
 msgstr "בקשת איפוס סיסמה"
 
-#: app/routes.py:37
+#: app/routes.py:43
 msgid "Your post is now live!"
 msgstr "ההודעה שלך היא עכשיו חי!"
 
-#: app/routes.py:78
+#: app/routes.py:84
 msgid "Invalid username or password"
 msgstr "שם משתמש או סיסמה לא חוקים"
 
-#: app/routes.py:106
+#: app/routes.py:112
 msgid "Congratulations, you are now a registered user"
 msgstr "מזל טוב, אתה כעת משתמש רשום"
 
-#: app/routes.py:135
+#: app/routes.py:141
 msgid "Your changes have been saved."
 msgstr "השינויים שלך נשמרו."
 
-#: app/routes.py:150 app/routes.py:166
+#: app/routes.py:156 app/routes.py:172
 #, python-format
 msgid "User %(username)s not found."
 msgstr ""
 
-#: app/routes.py:153
+#: app/routes.py:159
 msgid "You cannot follow yourself"
 msgstr ""
 
-#: app/routes.py:157
+#: app/routes.py:163
 #, python-format
 msgid "Your are following %(username)s!"
 msgstr ""
 
-#: app/routes.py:169
+#: app/routes.py:175
 msgid "You cannot unfollow yourself"
 msgstr ""
 
-#: app/routes.py:173
+#: app/routes.py:179
 #, python-format
 msgid "You are not following %(username)s."
 msgstr ""
 
-#: app/routes.py:186
+#: app/routes.py:192
 msgid "Check your email for the instructions to reset your password"
 msgstr "בדוק את הדואר האלקטרוני שלך לקבלת ההוראות לאיפוס הסיסמה"
 
-#: app/routes.py:204
+#: app/routes.py:210
 msgid "Your password has been reset"
 msgstr "הסיסמה שלך אופסה"
+
+#: app/translate.py:10
+msgid "Error: the translation service is not configured."
+msgstr ""
+
+#: app/translate.py:19
+msgid "Error: the translation service failed"
+msgstr ""
 
 #: app/templates/404.html:4
 msgid "File Not Found"
@@ -144,6 +152,10 @@ msgstr "התקבל דיווח על מנהל המערכת. מצטער על אי �
 #: app/templates/_post.html:10
 #, python-format
 msgid " %(username)s said  %(when)s"
+msgstr ""
+
+#: app/templates/_post.html:21
+msgid "Translate"
 msgstr ""
 
 #: app/templates/base.html:18
@@ -174,6 +186,10 @@ msgstr "פרופיל"
 msgid "Logout"
 msgstr "התנתק"
 
+#: app/templates/base.html:77
+msgid "Error: could not contact server"
+msgstr ""
+
 #: app/templates/edit_profile.html:5
 msgid "Edit Profile"
 msgstr "עריכת פרופיל"
@@ -183,11 +199,11 @@ msgstr "עריכת פרופיל"
 msgid "Hi, %(username)s !"
 msgstr "%(username)s משתמש"
 
-#: app/templates/index.html:22 app/templates/user.html:39
+#: app/templates/index.html:22 app/templates/user.html:38
 msgid " Newer Posts"
 msgstr "חדש יותר"
 
-#: app/templates/index.html:27 app/templates/user.html:44
+#: app/templates/index.html:27 app/templates/user.html:43
 msgid "Older Posts "
 msgstr "ישן יותר"
 
@@ -231,16 +247,19 @@ msgid "%(followers)s followers %(following)s following"
 msgstr ""
 
 #: app/templates/user.html:17
-msgid ""
-"Edit your\n"
-"                        profile"
+msgid "Edit your profile"
 msgstr ""
 
-#: app/templates/user.html:21
+#: app/templates/user.html:20
 msgid "Follow"
 msgstr ""
 
-#: app/templates/user.html:24
+#: app/templates/user.html:23
 msgid "Unfollow"
 msgstr ""
+
+#~ msgid ""
+#~ "Edit your\n"
+#~ "                        profile"
+#~ msgstr ""
 
