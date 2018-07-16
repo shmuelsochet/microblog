@@ -16,11 +16,21 @@ from config import Config
 app = Flask(__name__)
 app.config.from_object(Config)
 db = SQLAlchemy(app)
-migrate = Migrate(app, db)
 login = LoginManager(app)
+mail = Mail(app)
+
+from app.main import bp as main_bp
+app.register_blueprint(main_bp, url_prefix='/main')
+
+from app.errors import bp as errors_bp
+app.register_blueprint(errors_bp)
+
+from app.auth import bp as auth_bp
+app.register_blueprint(auth_bp, url_prefix='/auth')
+
+migrate = Migrate(app, db)
 login.login_view = 'login'
 login.login_message = _1('Please login to access this page.')
-mail = Mail(app)
 bootstrap = Bootstrap(app)
 moment = Moment(app)
 babel = Babel(app)
@@ -63,4 +73,5 @@ def get_local():
     return request.accept_languages.best_match(app.config['LANGUAGES'])
 
 
-from app import routes, models, errors
+from app import models, errors
+from app.main import routes
