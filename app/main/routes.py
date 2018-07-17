@@ -9,11 +9,7 @@ from flask_babel import _, get_locale
 from app import app, db
 from app.main.forms import EditProfileForm, PostForm
 from app.models import User, Post
-from app import login
 from app.translate import translate
-
-
-login.login_view = 'login'
 
 
 @app.before_request

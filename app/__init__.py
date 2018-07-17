@@ -19,8 +19,14 @@ db = SQLAlchemy(app)
 login = LoginManager(app)
 mail = Mail(app)
 
-from app.main import bp as main_bp
-app.register_blueprint(main_bp)
+
+migrate = Migrate(app, db)
+login.login_view = 'auth.login'
+login.login_message = _1('Please login to access this page.')
+bootstrap = Bootstrap(app)
+moment = Moment(app)
+babel = Babel(app)
+
 
 from app.errors import bp as errors_bp
 app.register_blueprint(errors_bp)
@@ -28,12 +34,8 @@ app.register_blueprint(errors_bp)
 from app.auth import bp as auth_bp
 app.register_blueprint(auth_bp, url_prefix='/auth')
 
-migrate = Migrate(app, db)
-login.login_view = 'login'
-login.login_message = _1('Please login to access this page.')
-bootstrap = Bootstrap(app)
-moment = Moment(app)
-babel = Babel(app)
+from app.main import bp as main_bp
+app.register_blueprint(main_bp)
 
 if not app.debug:
     if app.config['MAIL_SERVER']:
