@@ -5,7 +5,7 @@ from wtforms import (
 from wtforms.validators import (
     DataRequired, ValidationError, Length
 )
-from flask_babel import lazy_gettext as _1
+from flask_babel import lazy_gettext as _1, _
 from app.models import User
 
 
