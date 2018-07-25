@@ -21,3 +21,8 @@ class Config(object):
     LANGUAGES = ['en', 'es', 'he']
     MS_TRANSLATOR_KEY = os.getenv('MS_TRANSLATOR_KEY')
 
+
+class TestConfig(Config):
+    TESTING = True
+    SQLALCHEMY_DATABASE_URI = 'sqlite://'
+
