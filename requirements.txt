@@ -1,7 +1,6 @@
 alembic==0.9.9
 Babel==2.5.3
 backcall==0.1.0
-beautifulsoup4==4.6.0
 blinker==1.4
 certifi==2018.4.16
 chardet==3.0.4
@@ -19,7 +18,6 @@ Flask-Moment==0.6.0
 Flask-SQLAlchemy==2.3.2
 Flask-WTF==0.14.2
 guess-language-spirit==0.5.3
-html5lib==1.0.1
 idna==2.6
 ipython==6.4.0
 ipython-genutils==0.2.0
@@ -33,7 +31,6 @@ pickleshare==0.7.4
 prompt-toolkit==1.0.15
 Pygments==2.2.0
 PyJWT==1.6.1
-pyTelegramBotAPI==3.6.3
 python-dateutil==2.7.2
 python-dotenv==0.8.2
 python-editor==1.0.3
